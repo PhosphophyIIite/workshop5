@@ -14,7 +14,7 @@ public class NEWCHASING : State {
         npc = GetComponent<NPCController>();
 
         curRotSpeed = 1.0f;
-        curSpeed = 1.0f;
+        curSpeed = 3.0f;
     }
 
     public override void Update()
