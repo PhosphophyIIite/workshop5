@@ -17,9 +17,9 @@ public class CubeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y > 2) {
+        if (transform.position.y > 8.71) {
             up = false;
-        } else if (transform.position.y < -2) {
+        } else if (transform.position.y < 4.71) {
             up = true;
         }
 
