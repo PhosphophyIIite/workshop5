@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     {
         //move player forwards
         Vector3 movement = new Vector3(movementX, 0.0f, movementY) * Time.deltaTime * moveSpeed;
-
+        movement = transform.TransformDirection(-movement);
         Vector3 direction = (transform.position - (transform.position + movement)).normalized;
 
         //move player forwards or backwards when a/s are pressed
